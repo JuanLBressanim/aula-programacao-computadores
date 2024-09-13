@@ -1,50 +1,79 @@
-var menuPizzas="         CARDÁPIDO:       \N";
-var menuPizzas=menuPizzas="Código | Nome | Preço\n";
-var menuPizzas=menuPizzas="1 | Mussarela  | R$20,00 \n";
-var menuPizzas=menuPizzas="2 | Calabresa  | R$25,00 \n";
-var menuPizzas=menuPizzas="3 | Marguerita | R$23,00 \n";
-var menuPizzas=menuPizzas="4 | 4 Queijos  | R$29,99 \n";
-var menuPizzas=menuPizzas="5 | Baiana     | R$22,50 \n";
-var menuPizzas=menuPizzas="\nDigite o número do seu pedido:";
+var menuPizzas="  CARDÁPIDO PIZZAS:       \n";
 
-var menuBebidas=prompt(" MENU:\n \n1 - Refrigerante 2L = R$10,00 \n2 - Refrigerante Lata = R$5,00 \n3 - Água =R$3,50 \n4 - Suco = 7,50 \n \nDigite o número do seu pedido:");
+var menuPizzas=menuPizzas+"Código | Nome | Preço \n";
+
+var menuPizzas=menuPizzas+="1 | Mussarela  | R$20,00 \n";
+var menuPizzas=menuPizzas+="2 | Calabresa  | R$25,00 \n";
+var menuPizzas=menuPizzas+="3 | Marguerita | R$23,00 \n";
+var menuPizzas=menuPizzas+="4 | 4 Queijos  | R$29,99 \n";
+var menuPizzas=menuPizzas+="5 | Baiana     | R$22,50 \n";
+
+var menuPizzas=menuPizzas+="\nDigite o número do seu pedido:";
+
+var pedidoPIzza=parseInt(prompt(menuPizzas));
 var quantidadePizza=parseInt(prompt(" Digite a quantidade de pizzas que deseja "));
+var valorTotalPizza=0;
+
+if(pedidoPIzza==1){
+    valorTotalPizza=quantidadePizza*20.00;
+    console.log(" Foi pedida" +" " +quantidadePizza +" " +"pizza sabor mussarela de "+ " " +"R$" +valorTotalPizza );
+
+}else if(pedidoPIzza==2){
+    valorTotalPizza=quantidadePizza*25.00;
+    console.log(" Foi pedida" +" " +quantidadePizza +" " +"pizza sabor calabresa de " +" " +"R$" +valorTotalPizza );
+
+}else if(pedidoPIzza==3){
+    valorTotalPizza=quantidadePizza*23.00;
+    console.log(" Foi pedida" +" " +quantidadePizza +" " +"pizza sabor marguerita de " +" " +"R$" +valorTotalPizza );
+
+}else if(pedidoPIzza==4){
+    valorTotalPizza=quantidadePizza*29.99;
+    console.log(" Foi pedida" +" " +quantidadePizza +" " +"pizza sabor 4 queijos de " +" " +"R$" +valorTotalPizza );
+
+}else if(pedidoPIzza==5){
+    valorTotalPizza=quantidadePizza*22.50;
+    console.log(" Foi pedida" +" " +quantidadePizza +" " +"pizza sabor baiana de " +" " +"R$" +valorTotalPizza );
+
+}else{
+    console.log(" Digite o codigo de pizzas corretamente");
+}
+
+
+var menuBebidas="         CARDÁPIO BEBIDAS:      \n";
+
+var menuBebidas=menuBebidas+"Código | Nome              | Preço \n";
+
+var menuBebidas=menuBebidas+="1 | Refrigerante 2L   | R$10,00 \n";
+var menuBebidas=menuBebidas+="2 | Refrigerante Lata | R$5,00 \n"
+var menuBebidas=menuBebidas+="3 | Água              | R$3,50 \n"
+var menuBebidas=menuBebidas+="4 | Suco              | 7,50 \n"
+
+var menuBebidas=menuBebidas+="\nDigite o número do seu pedido:"
+
+var pedidoBebidas=parseInt(prompt(menuBebidas));
 var quantidadeBebida=parseInt(prompt(" Digite a quantidade de bebidas que deseja "));
+var valorTotalBebida=0;
 
-if(menuPizzas=1){
-    var multiplicacaoPizza1=quantidadePizza*20.00
-    console.log(" pizza sabor nussarela de " +"R$"+multiplicacaoPizza1);
-}else if(menuPizzas=2){
-    var multiplicacaoPizza2=quantidadePizza*25.00
-    console.log(quantidadePizza+ " "+ " pizza sabor calabresa de " +" R$"+multiplicacaoPizza2); 
-}else if(menuPizzas=3){
-    var multiplicacaoPizza3=quantidadePizza*23.00
-    console.log(quantidadePizza+ " "+ " pizza sabor marguerita de "+ "R$"+multiplicacaoPizza3);
-}else if(menuPizzas=4){
-    var multiplicacaoPizza4=quantidadePizza*29.99
-    console.log(quantidadePizza+ " "+ " pizza sabor 4 queijos de "+ "R$"+multiplicacaoPizza4);
-}else if(menuPizzas=5){
-    var multiplicacaoPizza5=quantidadePizza*22.50
-    console.log(quantidadePizza+ " "+ " pizza sabor baiana de"+ "R$"+multiplicacaoPizza5);
+if(pedidoBebidas==1){
+    valorTotalBebida=quantidadeBebida*10.00;
+    console.log(" Foi pedido " +" " +quantidadeBebida +" " +" Refigeranta 2L de " +" " +"R$" +valorTotalBebida);
+
+}else if(pedidoBebidas==2){
+    valorTotalBebida=quantidadeBebida*5.00;
+    console.log(" Foi pedido " +" " +quantidadeBebida +" " +" Refigeranta lata de " +" " +"R$" +valorTotalBebida);
+
+}else if(pedidoBebidas==3){
+    valorTotalBebida=quantidadeBebida*3.50;
+    console.log(" Foi pedida " +" " +quantidadeBebida +" " +" água de " +" " +"R$" +valorTotalBebida);
+
+}else if(pedidoBebidas==4){
+    valorTotalBebida=quantidadeBebida*7.50;
+    console.log(" Foi pedido " +" " +quantidadeBebida +" " +" suco de " +" " +"R$" +valorTotalBebida);
+
 }else{
-    console.log(" Digite o codigo do pedido corretamente ");
-
+    console.log(" Digite o codigo de bebidas corretamente");
 }
 
-if(menuBebidas="1"){
-    var multiplicacaoBebida1=quantidadeBebida*10.00
-    console.log(quantidadeBebida+ " "+ " refrigerante 2L de "+ "R$"+multiplicacaoBebida1);
-}else if(menuBebidas2="2"){
-    var multiplicacaoBebida2=quantidadeBebida*5.00
-    console.log(quantidadeBebida+ " "+ " refrigerante lata de "+ "R$"+multiplicacaoBebida2);
-}else if(menuBebidas3="3"){
-    var multiplicacaoBebida3=quantidadeBebida*3.50
-    console.log(quantidadeBebida+ " "+ " água de "+ "R$"+multiplicacaoBebida3); 
-}else if(menuBebidas4="4"){
-    var multiplicacaoBebida4=quantidadeBebida*7.50
-    console.log(quantidadeBebida+ " "+ " Suco de "+ "R$"+multiplicacaoBebida1);
-}else{
-    console.log(" Digite o codigo do pedido corretamente ");
-}
+var valorTotalPedido=valorTotalPizza+valorTotalBebida;
 
-console.log("")
+console.log(" Total a pagar:" +" " +"R$" +valorTotalPedido);
