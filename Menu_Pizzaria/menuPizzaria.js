@@ -48,7 +48,24 @@ cardapioBebida+=" \nDigite o número do seu pedido: ";
 
 var pedidoBebida=parseInt(prompt(cardapioBebida));
 var quantidadeBebida=parseInt(prompt(" Digite a quantidade de bebidas que deseja "));
+var valorTotalBebida=0;
 
+if(pedidoBebidas==1){
+    valorTotalBebida=quantidadeBebida*10.00;
+    console.log(" Foi pedido " +" " +quantidadeBebida +" " +" Refigeranta 2L de " +" " +"R$" +valorTotalBebida);
+
+}else if(pedidoBebidas==2){
+    valorTotalBebida=quantidadeBebida*5.00;
+    console.log(" Foi pedido " +" " +quantidadeBebida +" " +" Refigeranta lata de " +" " +"R$" +valorTotalBebida);
+
+}else if(pedidoBebidas==3){
+    valorTotalBebida=quantidadeBebida*3.50;
+    console.log(" Foi pedida " +" " +quantidadeBebida +" " +" água de " +" " +"R$" +valorTotalBebida);
+
+}else if(pedidoBebidas==4){
+    valorTotalBebida=quantidadeBebida*7.50;
+    console.log(" Foi pedido " +" " +quantidadeBebida +" " +" suco de " +" " +"R$" +valorTotalBebida);
+}
 var valorBebida=0
 
 if(pedidoBebida==1){
