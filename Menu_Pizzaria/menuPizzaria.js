@@ -1,35 +1,76 @@
-var apresentacao=prompt(" Bem-vindo a nossa pizzaria, aperte qualquer tecla e veja nosso menu ");
-var menuPizzas=prompt(" MENU:\n \n1 - Mussarela = R$20,00 \n2 - Calabresa = R$25,00 \n3 - Marguerita = R$23,00 \n4 - 4 Queijos = R$29,99 \n5 - Baiana = R$22,50 \n \nDigite o número do seu pedido:");
-var menuBebidas=prompt(" MENU:\n \n1 - Refrigerante 2L = R$10,00 \n2 - Refrigerante Lata = R$5,00 \n3 - Água =R$3,50 \n4 - Suco = 7,50 \n \nDigite o número do seu pedido:");
+var cardapioPizza="   Cardápio Pizza  \n ";
+
+cardapioPizza=" Código |    Nome    | Preço \n ";
+cardapioPizza+=" 1 | Mussarela  | R$20,00 \n ";
+cardapioPizza+=" 2 | Calabresa  | R$25,00 \n ";
+cardapioPizza+=" 3 | Marguerita | R$23,00 \n ";
+cardapioPizza+=" 4 | 4 Queijos  | R$29,99 \n ";
+cardapioPizza+=" 5 | Baiana     | R$22,50 \n ";
+cardapioPizza+=" \nDigite o número do seu pedido: ";
+
+var pedidoPizza=parseInt(prompt(cardapioPizza));
 var quantidadePizza=parseInt(prompt(" Digite a quantidade de pizzas que deseja "));
+
+var valorPizza=0;
+
+if(pedidoPizza==1){
+    valorPizza=quantidadePizza*20.00
+    console.log(" Foi pedido" +" " +quantidadePizza +" " +"pizza sabor mussarela de" +" " +"R$" +valorPizza);
+
+}else if(pedidoPizza==2){
+    valorPizza=quantidadePizza*25.00
+    console.log(" Foi pedido" +" " +quantidadePizza +" " +"pizza sabor calabresa de" +" " +"R$" +valorPizza);
+
+}else if(pedidoPizza==3){
+    valorPizza=quantidadePizza*23.00
+    console.log(" Foi pedido" +" " +quantidadePizza +" " +" pizza sabor marguerita de" +" " +"R$" +valorPizza);
+
+}else if(pedidoPizza==4){
+    valorPizza=quantidadePizza*29.99
+    console.log(" Foi pedido" +" " +quantidadePizza +" " +"pizza sabor 4 queijos de" +" " +"R$" +valorPizza);
+
+}else if(pedidoPizza==5){
+    valorPizza=quantidadePizza*22.50
+    console.log(" Foi pedido" +" " +quantidadePizza +" " +" pizza sabor baiana de" +" " +"R$" +valorPizza);
+
+}else{
+    console.log("Digite o pedido de pizza corretamente");
+}
+
+var cardapioBebida="   Cardápio Bebidas  \n ";
+
+cardapioBebida="Código |        Nome       | Preço \n";
+cardapioBebida+=" 1 | Refrigerante 2L   | R$10,00 \n ";
+cardapioBebida+=" 2 | Refrigerante Lata | R$5,00 \n ";
+cardapioBebida+=" 3 | Água              | R$3,50 \n ";
+cardapioBebida+=" 4 | Suco              | R$7,50 \n ";
+cardapioBebida+=" \nDigite o número do seu pedido: ";
+
+var pedidoBebida=parseInt(prompt(cardapioBebida));
 var quantidadeBebida=parseInt(prompt(" Digite a quantidade de bebidas que deseja "));
 
-if(menuPizzas="1"){
-    var multiplicacaoPizza1=quantidadePizza*20.00
-}else if(menuPizzas="2"){
-    var multiplicacaoPizza2=quantidadePizza*25.00
-}else if(menuPizzas="3"){
-    var multiplicacaoPizza3=quantidadePizza*23.00
-}else if(menuPizzas="4"){
-    var multiplicacaoPizza4=quantidadePizza*29.99
-}else if(menuPizzas="5"){
-    var multiplicacaoPizza5=quantidadePizza*22.50
-}else{
-    console.log(" Digite o codigo do pedido corretamente ");
+var valorBebida=0
 
+if(pedidoBebida==1){
+    valorBebida=quantidadeBebida*10.00;
+    console.log(" Foi pedido" +" " +quantidadeBebida +" " +"refrigerante 2L de" +" " +"R$" +valorBebida); 
+
+}else if(pedidoBebida==2){
+    valorBebida=quantidadeBebida*5.00;
+    console.log(" Foi pedido" +" " +quantidadeBebida +" " +"refrigerante lata de" +" " +"R$" +valorBebida); 
+
+}else if(pedidoBebida==3){
+    valorBebida=quantidadeBebida*3.50;
+    console.log(" Foi pedido" +" " +quantidadeBebida +" " +"água de" +" " +"R$" +valorBebida); 
+
+}else if(pedidoBebida==4){
+    valorBebida=quantidadeBebida*7.50;
+    console.log(" Foi pedido" +" " +quantidadeBebida +" " +"suco de" +" " +"R$" +valorBebida); 
+
+}else{
+    console.log(" Digite o pedido das bebidas corretamente ");
 }
 
-if(menuBebidas="1"){
-    var multiplicacaoBebida1=quantidadeBebida*10.00
-}else if(menuPizzas="2"){
-    var multiplicacaoBebida2=quantidadeBebida*5.00
-}else if(menuPizzas="3"){
-    var multiplicacaoBebida3=quantidadeBebida*3.50
-}else if(menuPizzas="4"){
-    var multiplicacaoBebida4=quantidadeBebida*7.50
-}else{
-    console.log(" Digite o codigo do pedido corretamente ");
-}
+var valorTotal=valorPizza+valorBebida;
 
-var Soma=menuPizzas+menuBebidas;
-var totalValor=prompt(" O seu pedido deu:"+" "+ "R$"+Soma);
+console.log("Total a pagar:" +" " +valorTotal);
