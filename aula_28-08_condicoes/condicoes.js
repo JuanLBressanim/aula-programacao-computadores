@@ -1,25 +1,3 @@
-/*
-Var palavra variavel
-Prompt(""): string
-ParseInt(""): number
-ParseFloat(""): number
-Console.log(""): void
-
-+Soma ou concatena
--Subtra
-*Multiplica
-/Divide
-
-Condições 
-If(var ou text/number ____ var ou text/number)
-== Igual/comparação
-> Maior
->= Maior igual
-< Menor
->= Menor igual
-!= Diferente
-*/
-
 var anoAtual=2024;
 var anoNascimento=parseInt(prompt("Digite seu ano de nascimento"));
 var idade=anoAtual-anoNascimento;
