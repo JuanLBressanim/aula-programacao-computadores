@@ -48,6 +48,7 @@ cardapioBebida+=" \nDigite o número do seu pedido: ";
 
 var pedidoBebida=parseInt(prompt(cardapioBebida));
 var quantidadeBebida=parseInt(prompt(" Digite a quantidade de bebidas que deseja "));
+
 var valorTotalBebida=0;
 
 if(pedidoBebidas==1){
@@ -65,24 +66,6 @@ if(pedidoBebidas==1){
 }else if(pedidoBebidas==4){
     valorTotalBebida=quantidadeBebida*7.50;
     console.log(" Foi pedido " +" " +quantidadeBebida +" " +" suco de " +" " +"R$" +valorTotalBebida);
-}
-var valorBebida=0
-
-if(pedidoBebida==1){
-    valorBebida=quantidadeBebida*10.00;
-    console.log(" Foi pedido" +" " +quantidadeBebida +" " +"refrigerante 2L de" +" " +"R$" +valorBebida); 
-
-}else if(pedidoBebida==2){
-    valorBebida=quantidadeBebida*5.00;
-    console.log(" Foi pedido" +" " +quantidadeBebida +" " +"refrigerante lata de" +" " +"R$" +valorBebida); 
-
-}else if(pedidoBebida==3){
-    valorBebida=quantidadeBebida*3.50;
-    console.log(" Foi pedido" +" " +quantidadeBebida +" " +"água de" +" " +"R$" +valorBebida); 
-
-}else if(pedidoBebida==4){
-    valorBebida=quantidadeBebida*7.50;
-    console.log(" Foi pedido" +" " +quantidadeBebida +" " +"suco de" +" " +"R$" +valorBebida); 
 
 }else{
     console.log(" Digite o pedido das bebidas corretamente ");
