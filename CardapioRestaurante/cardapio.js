@@ -10,6 +10,7 @@ cardapio+=" \n Digite o número do seu pedido:";
 
 var cardapioPedido=parseInt(prompt(cardapio));
 var quantidadePedido=parseInt(prompt(" digite a quantidade que deseja "));
+
 var valorTotal=0
 
 if(PedidoCardapio==1){
@@ -27,28 +28,6 @@ if(PedidoCardapio==1){
 }else if(PedidoCardapio==5){
     valorTotal=quantidadePedido*
     console.log(" Foram pedidos " +quantidadePedido +" " +" Cheeseburguer de " +" " +"R$" +" " +valorTotal );
-}
-var valorPedido=0
-
-if(cardapioPedido==1){
-    valorPedido=quantidadePedido*1.10;
-    console.log(" Seu pedido é" +" " +quantidadePedido +" " +"cachorro quente de" +" " +"R$" +valorPedido);
-
-}else if(cardapioPedido==2){
-    valorPedido=quantidadePedido*1.30;
-    console.log(" Seu pedido é" +" " +quantidadePedido +" " +"bauru simples de" +" " +"R$" +valorPedido);
-
-}else if(cardapioPedido==3){
-    valorPedido=quantidadePedido*1.50;
-    console.log(" Seu pedido é" +" " +quantidadePedido +" " +"bauru c/ovo de" +" " +"R$" +valorPedido);
-
-}else if(cardapioPedido==4){
-    valorPedido=quantidadePedido*1.10;
-    console.log(" Seu pedido é" +" " +quantidadePedido +" " +"hamburguer de" +" " +"R$" +valorPedido);
-
-}else if(cardapioPedido==5){
-    valorPedido=quantidadePedido*1.30
-    console.log(" Seu pedido é" +" " +quantidadePedido +" " +"cheeseburguer de" +" " +"R$" +valorPedido);
 
 }else{
     console.log(" Digite o código do pedido corretamente ");
