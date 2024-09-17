@@ -4,7 +4,7 @@ var idade=anoAtual-anoNascimento;
 
 if(idade>=18){
     console.log("Você é maior de idade no Brasil");
-console.log( "Você é obrigado a votar");
+    console.log( "Você é obrigado a votar");
 }else{
     console.log("Você é menor de idade no Brasil");
 }
