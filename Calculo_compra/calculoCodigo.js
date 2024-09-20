@@ -11,43 +11,40 @@ formaPagamento+=" 4 | Em 3 vezes, cheque          | 10% de juros \n";
 formaPagamento+="\nEscolha a sua forma de pagamento: ";
 
 var escolhaPagamento=parseInt(prompt(formaPagamento));
-var valorTotal=0
 
 if(escolhaPagamento==1){
     var valorQuanti1=valorProdu*quantidadeProdu;
-    var contaPorcentagem1=10/100
-    var valorDesconto1=valorProdu*contaPorcentagem1
-    var valorTotal=valorProdu-valorDesconto1
+    var contaPorcentagem1=valorQuanti1*0.1;
+    var valorTotal1=valorQuanti1-contaPorcentagem1;
     
-    console.log(" O desconto é de: " +" " +valorDesconto1 +"% ");
+    console.log(" O desconto é de: " +" " +"10% ");
     
     console.log(" O valor total da sua compra é:" +" " +"R$"+valorTotal);
 
 }else if(escolhaPagamento==2){
     var valorQuanti2=valorProdu*quantidadeProdu;
-    var contaPorcentagem2=5/100
-    var valorDesconto2=valorProdu*contaPorcentagem2
-    var valorTotal=valorProdu-valorDesconto2
+    var contaPorcentagem2=valorQuanti2*0.05;
+    var valorTotal2=valorQuanti1-contaPorcentagem2;
 
-    console.log(" O desconto é de: " +" " +valorDesconto2 +"% ");
+    console.log(" O desconto é de: " +" " +"5% ");
     
-    console.log(" A sua compra foi efetuada no total de" +" " +"R%"+valorTotal +" ");
+    console.log(" A sua compra foi efetuada no total de" +" " +"R%"+valorTotal2 +" ");
 
 }else if(escolhaPagamento==3){
     var valorQuanti3=valorProdu*quantidadeProdu;
-    var quantiVezes3=valorQuanti3/2;
-    var valorTotal=valorQuanti3-quantiVezes3;
+    var valorParcela3=valorQuanti3/2;
     
-    console.log(" A sua compra foi efetuada em 2x de" +" " +"R$"+valorTotal +", " +"sem juros ");
+    console.log(" A sua compra foi efetuada em 2x de" +" " +"R$"+valorQuanti3 +", " +"sem juros ");
 
 }else if(escolhaPagamento==4){
     var valorQuanti4=valorProdu*quantidadeProdu;
-    var valorJuros=(valorQuanti4/3*10);
-    var valorTotal=valorQuanti4+valorJuros;
+    var contaPorcentagem4=valorQuanti4*0.1;
+    var valorTotal4=valorQuanti4+contaPorcentagem4;
+    var valorParcela4=valorTotal4/3;
 
-    console.log(" O juros é de: " +" " +valorJuros +"% ");
+    console.log(" O juros é de: " +" " +"%10 ");
     
-    console.log(" O valor total da sua compra é:" +" " +"R$"+valorTotal);
+    console.log(" O valor total da sua compra é:" +" " +"R$"+valorParcela4);
 
 }else{
     console.log(" Digite os valores corretamente ");
