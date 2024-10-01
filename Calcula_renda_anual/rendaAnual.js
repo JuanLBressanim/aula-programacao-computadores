@@ -5,7 +5,7 @@ valorTotal=0
 if(rendaAnual<=22.847,76){
     console.log(" Devido a seu valor de renda anual, você esta isento ");
 
-}else if(rendaAnual>22.847,76&rendaAnual<=33.919,80){
+}else if(rendaAnual>22.847,77&rendaAnual<33.919,80){
     var porcentagem1=rendaAnual*0.075;
     var valorTotal=rendaAnual+porcentagem;
 
