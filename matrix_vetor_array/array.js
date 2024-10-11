@@ -1,6 +1,6 @@
 // Criam um vetor/array/matriz
 
-var vetor[]
+var vetor=[]
 
 // Para adicionar um elemento colocamos sua posição.
 
