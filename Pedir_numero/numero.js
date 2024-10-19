@@ -26,6 +26,7 @@ if(operacao=="+"){
     i++;
 
 
+
 }else if(operacao=="*"){
     resultado=numeros[i]*numeros[i];
     i++;
