@@ -6,30 +6,34 @@ var operacao="+" +"*"
 var continuar="Sim"
 
 while(continuar=="Sim"){
-    numeros[i]=parseFloat(prompt(` Digite o primeiro número: [${i+1}]`));
+    numeros[i]=parseFloat(prompt("Digite um número: " ));
     i++;
 
-    operacao=prompt(" Digite a operação que deseja (+ ou *): ");
-
-    numeros[i]=parseFloat(prompt(` Digite o primeiro número: [${i+1}]`));
-    i++;
-    
     continuar=prompt(" Deseja adicionar outro número?: ");
 
 }
 
-var resultado=0;
-i=0;
+operacao=prompt(" Digite a operação que deseja (+ ou *): ");
+
 
 if(operacao=="+"){
-    resultado=numeros[i]+numeros[i];
-    i++;
+    var total=0;
+    i=0;
 
+    while(i<numeros.length){
+        total+=numeros[i];
+        i++;
 
+    }
 
 }else if(operacao=="*"){
-    resultado=numeros[i]*numeros[i];
-    i++;
+    var total=1;
+    i=0;
+
+    while(i<numeros.length){
+        total*=numeros[i];
+        i++;
+    }
 
 
 }else{
@@ -37,5 +41,9 @@ if(operacao=="+"){
 
 }
 
-console.log(`Resultado: ${resultado}`);
+while(i<numeros.length){
+    console.log(numeros);
+    i++;
+
+}
 
