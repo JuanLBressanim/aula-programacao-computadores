@@ -37,18 +37,12 @@ i=0;
 var texto= "";
 
 while(i<numeros.length){
-    texto=i==numeros.length-1;
-
-if(texto=i==numeros.length-1){;
-    console.log(texto +"=");
-
-}else{
-    texto+=numeros[i], numeros[i];
+ if(i==numeros.length-1)
+    texto+=numeros[i]+"+";
     i++;
 
-    console.log(texto+ "+" +"+");
-  }
+ }
 
-}
+console.log(texto);
 
-console.log(total)
+console.log(" Total: ", total)
