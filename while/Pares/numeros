@@ -1,0 +1,8 @@
+var numero=parseInt(prompt(" Digite um número: "));
+
+var i=0;
+
+while(i < numero){
+    console.log(i);
+    i = i + 2;
+};

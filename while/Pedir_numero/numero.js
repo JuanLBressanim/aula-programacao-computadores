@@ -6,7 +6,7 @@ var operacao="+" +"*"
 var continuar="Sim"
 
 while(continuar=="Sim"){
-    numeros[i]=parseFloat(prompt("Digite um número: " ));
+    numeros[i]=parseFloat(prompt(" Digite um número: " ));
     i++;
 
     continuar=prompt(" Deseja adicionar outro número?: ");
