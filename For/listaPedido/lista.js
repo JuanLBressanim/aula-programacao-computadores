@@ -74,7 +74,7 @@ while(adicionar=="sim"){
 
 var totalPedido=0;
 
-for(i=0;i<listaPedido.length;i++;){
+for(i=0;i<listaPedido.length;i++){
     totalPedido=listaPedido[i].valor*listaPedido[i].quantidade
 }
 
